@@ -7,6 +7,14 @@ terraform {
       version = ">= 3.107.0"
     }
   }
+
+  cloud {
+    organization = "Integr8Now-Pitstop"
+
+    workspaces {
+      name = "ServiceNowPitstop"
+    }
+  }
 }
 
 provider "azurerm" {
